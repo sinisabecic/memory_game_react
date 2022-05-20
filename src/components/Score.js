@@ -14,7 +14,9 @@ function Score({ rounds, hitted, playAgain }) {
       {rounds <= 4 && hitted === 6 && (
         <p>
           Pobijedili ste! Zelite li da odigrate ponovo?
-          <button onClick={playAgain}>Da</button>
+          <button className="text-danger" onClick={playAgain}>
+            Da
+          </button>
         </p>
       )}
     </div>
